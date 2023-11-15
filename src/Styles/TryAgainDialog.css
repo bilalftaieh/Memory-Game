@@ -1,0 +1,52 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  width: 400px;
+  max-width: 80%; 
+  border: none;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation: dropDown 1s;
+  background: linear-gradient(to right, #ed1d24, #002395);
+  margin: auto; 
+  text-align: center;
+}
+
+.dialog h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.dialog p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.dialog button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dialog button:hover {
+  background-color: #0056b3;
+}
+
+@keyframes dropDown {
+  0% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
